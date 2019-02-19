@@ -9,7 +9,7 @@ get '/random_cat' do
   erb :index
 end
 
-get '/named_cat' do
+post '/named_cat' do
   p params
   @name = params[:name]
   erb :index
@@ -19,12 +19,6 @@ get "/my_route" do
   "Hi man, How are you?"
 end
 
-get '/new_route' do
-  "<html>
-  <body>
-  <div style='border: 3px dashed yellow'>
-    <img src='http://bit.ly/1eze8aE'>
-  </div>
-  </body>
-  </html>"
+get '/cat-form' do
+  erb :cat_form
 end

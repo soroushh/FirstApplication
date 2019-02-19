@@ -14,3 +14,17 @@ get '/named_cat' do
   @name = params[:name]
   erb :index
 end
+
+get "/my_route" do
+  "Hi man, How are you?"
+end
+
+get '/new_route' do
+  "<html>
+  <body>
+  <div style='border: 3px dashed yellow'>
+    <img src='http://bit.ly/1eze8aE'>
+  </div>
+  </body>
+  </html>"
+end
